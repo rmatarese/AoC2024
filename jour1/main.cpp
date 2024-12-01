@@ -42,7 +42,17 @@ int main() {
 
     std::sort(col1.begin(), col1.end());
     std::sort(col2.begin(), col2.end());
+
+    //part 1
     int totDist=0;
+    for (int i=0;i<col1.size();i++) {
+        totDist += abs(col1[i] - col2[i]);
+    }
+    std::cout << totDist << "\n";
+
+
+    //part 2
+    totDist=0;
     for (const auto& num : col1) {
         int appearInC2=0;
         for (const auto& num2 : col2) {
