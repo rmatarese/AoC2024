@@ -11,8 +11,6 @@ console.log(sum);
 
 // PARTIE 2
 
-//stratégie: faire un tableau avec les positions de tout les do et don't en plus d'un tableau avec les mult
-//on commence par faire le tableau des mult
 console.log("############PARTIE 2############");
 
 const regexp2 = /(?:don't|do|mul\((\d{1,3}),(\d{1,3})\))/gm;
